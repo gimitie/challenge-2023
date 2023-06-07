@@ -1,7 +1,9 @@
-document.addEventListener("onLoad",init);
+window.addEventListener("load",init);
 
 function init() {
     // document.getElementById("btn-toggle-theme").addEventListener("click",toggleTheme);
+    console.log("Teste");
+    document.getElementById("botao").addEventListener("click",darkTheme);
     verifyDarkTheme(isDarkTheme());
 }
 
@@ -16,7 +18,7 @@ function verifyDarkTheme(isDarkTheme = false) { // toggleTheme
     if(isDarkTheme){
         applyDarkTheme();
     } else {
-
+        applyLightTheme();
     }
     // ----------------- lógica de alteração do tema
 }
@@ -27,20 +29,23 @@ function applyDarkTheme() {
 }
 
 function darkTheme(){
+    Cookies.set('dark-theme',!isDarkTheme());
+
     changeBody();
     changeMenu();
-    changeButtons()
+    changeButtons();
 }
 
 function changeBodyToDark(){
     var elementBody = document.body;
-    elementBody.classList.toggle("bg-color-dark-body");
+    elementBody.classList.remove("bg-color-light-body");
+    elementBody.classList.add("bg-color-dark-body");
 }
 
 function changeMenuToDark(){
     var elementsMenu = document.getElementsByClassName("bg-color-light");
     for(var i = 0; i < elementsMenu.length; i++) {
-        toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light"));
+        toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
     }
 }
 

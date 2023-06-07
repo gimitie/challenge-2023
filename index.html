@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap" rel="stylesheet">
+    <!-- script js-cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <!-- script jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="./js/dark-theme.js"></script>
@@ -33,7 +35,7 @@
       $("#footer").load("./components/footer.html"); 
       });
   </script> 
-  </head>
+</head>
 <body class="bodyy">
   <div id="header"></div>
   <!--*************************  A Crise da Fome  ***************************-->
@@ -121,7 +123,7 @@
       </div>
     </div>
   </section>
-  <button id="botao" onclick="darkTheme()">Toggle dark mode</button>
+  <button id="botao">Toggle dark mode</button>
   <!--*************************  Footer  ***************************-->
   <div class="mt-5" id="footer"></div>
 </body>
