@@ -1,6 +1,7 @@
 li{
 	list-style: none;
 	text-decoration: none;
+	background-color: #ffff;
 }
 .line-footer{
     height: 3px;
@@ -10,12 +11,13 @@ li{
 }
 .footer{
     padding: 70px 0;
+	background-color: #ffff;
 }
 .img-logo{
     background-color: transparent;
 }
-/* text-light */
-.text-light-light{
+/* text */
+.text{
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -23,16 +25,16 @@ li{
     color: black;
     transition: all 0.4s;
 }
-.text-light:active{
+.text:active{
     color: black;
 }
-.text-light:visited{
+.text:visited{
     color: black;
 }
-.text-light:link{
+.text:link{
     color: black;
 }
-.text-light:hover{
+.text:hover{
     color: #626567;
 }
 /* social media */
