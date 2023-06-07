@@ -1,0 +1,68 @@
+/*************** NavBar ****************/
+.navbar{
+    width: 100%;
+}
+.navbar-toggler-icon{
+    background-color: #f8f9fa;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.4s;
+}
+.nav-item a:active{
+    color: black;
+}
+.nav-item a:visited{
+    color: black;
+}
+.nav-item a:link{
+    color: black;
+}
+.nav-item a:hover{
+    color: #626567;
+}
+.navbar-brand{
+    height: 50px;
+    width: 100px;
+}
+/* search */
+.search{
+    height: 45px;
+    outline: none;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 20px 0px 0px 20px;
+    border-right: none;
+}
+.btn1{
+    height: 45px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.4s;
+}
+.btn1:hover{
+    color: white;
+    background-color: black;
+}
+/* menu list */
+.navbar-toggler{
+    font-size: 23px;
+    color: black;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.bi.bi-search{
+    background-color: transparent;
+}
+.bi.bi-search:hover{
+    color: white;
+    background-color: transparent;
+}

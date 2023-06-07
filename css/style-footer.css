@@ -1,0 +1,53 @@
+li{
+	list-style: none;
+	text-decoration: none;
+}
+.line-footer{
+    height: 3px;
+    width: 15%;
+    background: #E83354;
+    display: inline-block;
+}
+.footer{
+    padding: 70px 0;
+}
+.img-logo{
+    background-color: transparent;
+}
+/* text-light */
+.text-light-light{
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+	font-size: 15px;   
+    color: black;
+    transition: all 0.4s;
+}
+.text-light:active{
+    color: black;
+}
+.text-light:visited{
+    color: black;
+}
+.text-light:link{
+    color: black;
+}
+.text-light:hover{
+    color: #626567;
+}
+/* social media */
+.bi-facebook{
+	color: black;
+}
+.bi-instagram{
+	color: black;
+}
+.bi-twitter{
+	color: black;
+}
+.bi-linkedin{
+	color: black;
+}
+.bi-facebook:hover, .bi-instagram:hover, .bi-linkedin:hover, .bi-twitter:hover{
+    color: #E83354;
+}
