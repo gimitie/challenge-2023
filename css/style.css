@@ -20,13 +20,13 @@ p{
 .line{
     height: 6px;
     width: 30%;
-    background: #E83354;
+    background: #97D700;
     display: inline-block;
 }
 .line-hunger{
     height: 6px;
     width: 25%;
-    background: #E83354;
+    background: #97D700;
     display: inline-block;
 }
 /*************** NavBar ****************/
@@ -199,7 +199,7 @@ li{
     outline: none;
     border: none;
     color: white;
-    background: #E83354;
+    background: #97D700;
     border-radius: 50px;
     transition: all 0.4;
     text-decoration: none;
@@ -220,7 +220,7 @@ li{
     outline: none;
     border: 1.5px solid;
     background-color: transparent;
-    color: #E83354;
+    color: #97D700;
     border-radius: 50px;
     transition: all 0.4s;
 }
