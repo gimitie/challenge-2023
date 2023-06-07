@@ -5,7 +5,7 @@ li{
 .line-footer{
     height: 3px;
     width: 15%;
-    background: #E83354;
+    background: #97D700;
     display: inline-block;
 }
 .footer{
@@ -49,5 +49,5 @@ li{
 	color: black;
 }
 .bi-facebook:hover, .bi-instagram:hover, .bi-linkedin:hover, .bi-twitter:hover{
-    color: #E83354;
+    color: #97D700;
 }
