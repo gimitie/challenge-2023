@@ -1,9 +1,16 @@
 window.addEventListener("load",init);
+// document.getElementsByTagName("body")[0].addEventListener("load",init);
+// window.document.addEventListener("load",init)
+// $(window).on("load",init);
+// $(document).ready(init);
+// todas essas opções executam duas vezes ou da errado. Testando aqui, ele acaba rodando duas vezes esse evento por conta do header (que tá sendo incluído no html)
+// pelo o que eu vi é pq no header ele tbm tava chamando esse js aqui
+
 
 function init() {
     // document.getElementById("btn-toggle-theme").addEventListener("click",toggleTheme);
     console.log("Teste");
-    document.getElementById("botao").addEventListener("click",darkTheme);
+    // document.getElementById("botao").addEventListener("click",darkTheme);
     verifyDarkTheme(isDarkTheme());
 }
 
@@ -44,8 +51,17 @@ function changeBodyToDark(){
 
 function changeMenuToDark(){
     var elementsMenu = document.getElementsByClassName("bg-color-light");
+    var elementsAux;
     for(var i = 0; i < elementsMenu.length; i++) {
-        toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
+        // tem que ser primeiro o add e depois o remove pois, ao dar remove, o item sai da lista do getElementByClassName, uma vez que não tem mais a classe removida
+        console.log(i);
+        elementsMenu[i].classList.add("bg-color-dark");
+        // toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
+    }
+    // pelo mesmo motivo do comentário anterior, tem que separar o add do remove, pois, como estamos usando um for, ele vai adicionando 1 ao numero do índice, 
+    // porém, com o remove, o javascript remove automaticamente esse elemento da lista, fazendo com que o tamanho dela se altere e, consequentemente, os índices
+    for(var i = 0; i < elementsMenu.length; i++) {
+        elementsMenu[i].classList.remove("bg-color-light");
     }
 }
 
