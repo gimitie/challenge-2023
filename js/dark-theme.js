@@ -51,18 +51,22 @@ function changeBodyToDark(){
 
 function changeMenuToDark(){
     var elementsMenu = document.getElementsByClassName("bg-color-light");
-    var elementsAux;
-    for(var i = 0; i < elementsMenu.length; i++) {
-        // tem que ser primeiro o add e depois o remove pois, ao dar remove, o item sai da lista do getElementByClassName, uma vez que não tem mais a classe removida
-        console.log(i);
-        elementsMenu[i].classList.add("bg-color-dark");
-        // toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
+    for(var i = elementsMenu.length - 1; i >= 0; i--) {
+        // elementsMenu[i].classList.add("bg-color-dark");
+        toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
     }
-    // pelo mesmo motivo do comentário anterior, tem que separar o add do remove, pois, como estamos usando um for, ele vai adicionando 1 ao numero do índice, 
-    // porém, com o remove, o javascript remove automaticamente esse elemento da lista, fazendo com que o tamanho dela se altere e, consequentemente, os índices
-    for(var i = 0; i < elementsMenu.length; i++) {
-        elementsMenu[i].classList.remove("bg-color-light");
-    }
+    // var elementsAux;
+    // for(var i = 0; i < elementsMenu.length; i++) {
+    //     // tem que ser primeiro o add e depois o remove pois, ao dar remove, o item sai da lista do getElementByClassName, uma vez que não tem mais a classe removida
+    //     console.log(i);
+    //     elementsMenu[i].classList.add("bg-color-dark");
+    //     // toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
+    // }
+    // // pelo mesmo motivo do comentário anterior, tem que separar o add do remove, pois, como estamos usando um for, ele vai adicionando 1 ao numero do índice, 
+    // // porém, com o remove, o javascript remove automaticamente esse elemento da lista, fazendo com que o tamanho dela se altere e, consequentemente, os índices
+    // for(var i = 0; i < elementsMenu.length; i++) {
+    //     elementsMenu[i].classList.remove("bg-color-light");
+    // }
 }
 
 function changeButtons(){
