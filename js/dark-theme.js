@@ -52,7 +52,7 @@ function init() {
     //   });
     // document.getElementById("btn-toggle-theme").addEventListener("click",toggleTheme);
     // console.log("Teste");
-    document.getElementById("botao").addEventListener("click",function() {
+    document.getElementById("btn-toggle-theme").addEventListener("click",function() {
         if(isCookieDarkTheme == 'true')
             Cookies.set('dark-theme', 'false');
         else
@@ -81,12 +81,18 @@ function verifyDarkTheme(isDarkTheme = false) { // toggleTheme
 
 function applyLightTheme() {
     changeMenu('black', 'black', '#f8f9fa');
-    changeBody('black', 'black', 'white')
+    changeBody('black', 'black', 'white');
+    var btnToggleTheme = document.getElementById("btn-toggle-theme");
+    btnToggleTheme.classList.add("bi-moon");
+    btnToggleTheme.classList.remove("bi-brightness-high");
 }
 
 function applyDarkTheme() {
     changeMenu('white', 'white', '#0a0a0a');
     changeBody('white', 'white', '#292929');
+    var btnToggleTheme = document.getElementById("btn-toggle-theme");
+    btnToggleTheme.classList.remove("bi-moon");
+    btnToggleTheme.classList.add("bi-brightness-high");
 }
 
 function darkTheme(){
