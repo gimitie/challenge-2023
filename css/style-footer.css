@@ -1,3 +1,11 @@
+/* :root {
+    --bg-color-body: #f8f9fa;
+    --border-color-body: black;
+    --bg-color: black;
+    --bg-border-color: black;
+    --bg-background-color: #f8f9fa;
+} */
+
 li{
 	list-style: none;
 	text-decoration: none;
@@ -15,38 +23,41 @@ li{
     background-color: transparent;
 }
 /* text-light */
-.text-light-light{
+.text-light {
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 	font-size: 15px;   
-    color: black;
+    /* color: var(--bg-color)!important; */
     transition: all 0.4s;
 }
+.text-light.bg-color {
+    color: var(--bg-color)!important;
+}
 .text-light:active{
-    color: black;
+    color: var(--bg-color);
 }
 .text-light:visited{
-    color: black;
+    color: var(--bg-color);
 }
 .text-light:link{
-    color: black;
+    color: var(--bg-color);
 }
 .text-light:hover{
     color: #626567;
 }
 /* social media */
 .bi-facebook{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-instagram{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-twitter{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-linkedin{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-facebook:hover, .bi-instagram:hover, .bi-linkedin:hover, .bi-twitter:hover{
     color: #97D700;

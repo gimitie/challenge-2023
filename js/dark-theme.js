@@ -20,7 +20,7 @@ function header() {
     var input=new XMLHttpRequest();
     input.open("GET","components/header.html")
     input.addEventListener("load",function(){
-        console.log("teste1");
+        // console.log("teste1");
         output.innerHTML=input.responseText;
         footer();
         
@@ -33,7 +33,7 @@ function footer() {
     var input=new XMLHttpRequest();
     input.open("GET","components/footer.html")
     input.addEventListener("load",function(){
-        console.log("teste2");
+        // console.log("teste2");
         output2.innerHTML=input.responseText;
         init();
         
@@ -42,6 +42,7 @@ function footer() {
 }
 
 function init() {
+    var isCookieDarkTheme = isDarkTheme();
     // $(function(){
     //     $("#header").load("./components/header.html"); 
     //   });
@@ -50,9 +51,16 @@ function init() {
     //     $("#footer").load("./components/footer.html"); 
     //   });
     // document.getElementById("btn-toggle-theme").addEventListener("click",toggleTheme);
-    console.log("Teste");
-    // document.getElementById("botao").addEventListener("click",darkTheme);
-    verifyDarkTheme(isDarkTheme());
+    // console.log("Teste");
+    document.getElementById("botao").addEventListener("click",function() {
+        if(isCookieDarkTheme == 'true')
+            Cookies.set('dark-theme', 'false');
+        else
+            Cookies.set('dark-theme', 'true');
+
+        header();
+    });
+    verifyDarkTheme(isCookieDarkTheme);
 }
 
 function isDarkTheme() {
@@ -72,12 +80,13 @@ function verifyDarkTheme(isDarkTheme = false) { // toggleTheme
 }
 
 function applyLightTheme() {
-    console.log("light theme applied");
+    changeMenu('black', 'black', '#f8f9fa');
+    changeBody('black', 'black', 'white')
 }
 
 function applyDarkTheme() {
-    changeMenuToDark();
-    changeBodyToDark();
+    changeMenu('white', 'white', '#0a0a0a');
+    changeBody('white', 'white', '#292929');
 }
 
 function darkTheme(){
@@ -88,22 +97,29 @@ function darkTheme(){
     changeButtons();
 }
 
-function changeBodyToDark(){
-    var elementBody = document.body;
-    elementBody.classList.remove("bg-color-light-body");
-    elementBody.classList.add("bg-color-dark-body");
+function changeBody(colorCody, borderColorBody, backgroundColorBody){
+    document.body.style.setProperty('--bg-color-body', colorCody);
+    document.body.style.setProperty('--bg-border-color-body', borderColorBody);
+    document.body.style.setProperty('--bg-background-color-body', backgroundColorBody);
+    // var elementBody = document.body;
+    // elementBody.classList.remove("bg-color-light-body");
+    // elementBody.classList.add("bg-color-dark-body");
 }
 
 function changeBodyContentToDark() {
 
 }
 
-function changeMenuToDark(){
-    var elementsMenu = document.getElementsByClassName("bg-color-light");
-    for(var i = elementsMenu.length - 1; i >= 0; i--) {
-        // elementsMenu[i].classList.add("bg-color-dark");
-        toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
-    }
+function changeMenu(bgColor, borderColor, backgroundColor){
+    document.body.style.setProperty('--bg-color', bgColor);
+    document.body.style.setProperty('--bg-border-color', borderColor);
+    document.body.style.setProperty('--bg-background-color', backgroundColor);
+
+    // var elementsMenu = document.getElementsByClassName("bg-color-light");
+    // for(var i = elementsMenu.length - 1; i >= 0; i--) {
+    //     // elementsMenu[i].classList.add("bg-color-dark");
+    //     toggleTheme(elementsMenu[i], "bg-color-dark", "bg-color-light");
+    // }
     // var elementsAux;
     // for(var i = 0; i < elementsMenu.length; i++) {
     //     // tem que ser primeiro o add e depois o remove pois, ao dar remove, o item sai da lista do getElementByClassName, uma vez que não tem mais a classe removida

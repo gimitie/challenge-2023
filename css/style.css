@@ -1,20 +1,44 @@
 /*************** General ***************/
+:root {
+    /* body */
+    --bg-color-body: black;
+    --border-color-body: black;
+    --bg-background-color-body: white;
+    /*  */
+    --bg-color: black;
+    --bg-border-color: black;
+    --bg-background-color: #f8f9fa;
+}
+
 p{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
-.bg-color-light{
+/* .bg-color-light{
     background-color: #f8f9fa;
 }
 .bg-color-dark{
     color: white;
     border-color: white;
     background-color: #0a0a0a;
-}
+} */
 .bg-color-dark-body{
     color: white;
     border-color: white;
     background-color: #292929;
+}
+
+.bg-color{
+    color: var(--bg-color);
+    border-color: var(--bg-border-color);
+    background-color: var(--bg-background-color);
+}
+
+.bg-color-body{
+    color: var(--bg-color-body);
+    border-color: var(--border-color-body);
+    background-color: var(--bg-background-color-body);
+    /* background-color: #292929; */
 }
 /*************** Line ***************/
 .line{
@@ -58,6 +82,11 @@ p{
 .mbtn-light{
     color: black;
 }
+
+.mbtn {
+    color: var(--bg-color);
+}
+
 .mbtn1{
     height: 50px;
     width: 25%;

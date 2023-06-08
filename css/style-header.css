@@ -1,4 +1,13 @@
 /*************** NavBar ****************/
+/* @import url("style.css") root; */
+/* :root {
+    --bg-color-body: #f8f9fa;
+    --border-color-body: black;
+    --bg-color: black;
+    --bg-border-color: black;
+    --bg-background-color: #f8f9fa;
+} */
+
 .navbar{
     width: 100%;
 }
@@ -7,20 +16,20 @@
 }
 .nav-item a{
     text-decoration: none;
-    color: black;
+    color: var(--bg-color);
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 15px;
     transition: all 0.4s;
 }
 .nav-item a:active{
-    color: black;
+    color: var(--bg-color);
 }
 .nav-item a:visited{
-    color: black;
+    color: var(--bg-color);
 }
 .nav-item a:link{
-    color: black;
+    color: var(--bg-color);
 }
 .nav-item a:hover{
     color: #626567;
@@ -33,7 +42,7 @@
 .search{
     height: 45px;
     outline: none;
-    border: 2px solid black;
+    border: 2px solid var(--bg-color);
     background-color: transparent;
     border-radius: 20px 0px 0px 20px;
     border-right: none;
@@ -42,13 +51,13 @@
     height: 45px;
     outline: none;
     background-color: transparent;
-    color: black;
+    color: var(--bg-color);
     border-radius: 0px 20px 20px 0px;
     transition: all 0.4s;
 }
 .btn1:hover{
     color: white;
-    background-color: black;
+    background-color: var(--bg-color);
 }
 /* menu list */
 .navbar-toggler{
@@ -89,27 +98,27 @@ li{
 	font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 	font-size: 15px;   
-    color: black;
+    color: var(--bg-color);
     transition: all 0.4s;
 }
 .text-light a:active, a:visited, a:link{
-    color: black;
+    color: var(--bg-color);
 }
 .text-light a:hover{
     color: #626567;
 }
 /* social media */
 .bi-facebook{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-instagram{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-twitter{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-linkedin{
-	color: black;
+	color: var(--bg-color);
 }
 .bi-facebook:hover, .bi-instagram:hover, .bi-linkedin:hover, .bi-twitter:hover{
     color: #97D700;
