@@ -8,6 +8,9 @@
     --bg-color: black;
     --bg-border-color: black;
     --bg-background-color: #f8f9fa;
+
+    --transition: none 0.4s;
+    --transition-btn: all 0.4s;
 }
 
 p{
@@ -32,12 +35,15 @@ p{
     color: var(--bg-color);
     border-color: var(--bg-border-color);
     background-color: var(--bg-background-color);
+    transition: var(--transition);
+    /* transition: var(--transition) 0.4; */
 }
 
 .bg-color-body{
     color: var(--bg-color-body);
     border-color: var(--border-color-body);
     background-color: var(--bg-background-color-body);
+    /* transition: var(--transition) 0.4; */
     /* background-color: #292929; */
 }
 /*************** Line ***************/
