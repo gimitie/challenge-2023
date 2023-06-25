@@ -1,5 +1,7 @@
 // evento toggleTheme -> vai chama o apply
 
+// window.matchMedia('(prefers-color-scheme: dark)')
+
 import { loadHeader, loadFooter } from "./dark-theme-loader.js";
 
 document.addEventListener('toggleTheme', function() {
