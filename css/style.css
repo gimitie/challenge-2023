@@ -9,7 +9,7 @@
     --bg-border-color: black;
     --bg-background-color: #f8f9fa;
 
-    --transition: none 0.4s;
+    --transition: all 0.4s;
     --transition-btn: all 0.4s;
 }
 
@@ -17,14 +17,7 @@ p{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
-/* .bg-color-light{
-    background-color: #f8f9fa;
-}
-.bg-color-dark{
-    color: white;
-    border-color: white;
-    background-color: #0a0a0a;
-} */
+
 .bg-color-dark-body{
     color: white;
     border-color: white;
