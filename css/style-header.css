@@ -48,21 +48,21 @@
     color: var(--bg-background-color);
 } */
 .btn1{
-    height: 45px;
+    height: 40px;
     outline: none;
     background-color: transparent;
     color: var(--bg-color);
-    border-radius: 0px 20px 20px 0px;
+    border: none;
     transition: all 0.4s;
 }
 
 .btn1:hover {
-    color: var(--bg-background-color);
-    background-color: var(--bg-color);
+    color: var(--bg-color);
+    background-color: transparent;
 }
 
 .btn1:hover > i{
-    color: var(--bg-background-color);
+    color: var(--bg-color);
     /* background-color: var(--bg-color); */
 }
 
@@ -87,7 +87,6 @@
     background-color: transparent;
 }
 .bi.bi-search:hover{
-    color: white;
     background-color: transparent;
 }
 /*************** Footer ****************/

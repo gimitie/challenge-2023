@@ -11,6 +11,13 @@
 
     --transition: all 0.4s;
     --transition-btn: all 0.4s;
+
+    /*teste gi*/
+    --bd-green: #97D700;
+}
+
+.bd-navbar::after{
+    background-image: linear-gradient(rgba(var(--bd-green), 1), rgba(var(--bd-green), 0.95));
 }
 
 p{
