@@ -5,9 +5,7 @@
 import { loadHeader, loadFooter } from "./dark-theme-loader.js";
 
 document.addEventListener('toggleTheme', function() {
-    // toggle = true;
     var isCookieDarkTheme = verifyIsDarkTheme();
-    // document.body.style.transition = 'all 0.7s'
     if(isCookieDarkTheme == 'true'){
         isCookieDarkTheme = 'false';
         localStorage.setItem('dark-theme', isCookieDarkTheme);
@@ -62,15 +60,12 @@ function changeButtonTheme(nameBtn, visibility) {
     document.body.style.setProperty(nameBtn, visibility);
 }
 
-
-
 export function verifyIsDarkTheme() {
     var isDarkTheme = localStorage.getItem('dark-theme');
     return isDarkTheme ? isDarkTheme: false;
 }
 
 export function applyTheme(isDarkTheme = verifyIsDarkTheme()) {
-    // toggleTheme
     localStorage.setItem('dark-theme', isDarkTheme);
 
     if(isDarkTheme.toString() == 'true'){
@@ -81,15 +76,6 @@ export function applyTheme(isDarkTheme = verifyIsDarkTheme()) {
     
     loadHeader();
     loadFooter();
-    // loadPage();
-}
-
-function loadPage() {
-    addEvents();
-}
-
-function addEvents() {
-   
 }
 
 function applyLightTheme() {
@@ -98,19 +84,6 @@ function applyLightTheme() {
 }
 
 function applyDarkTheme() {
-    // document.body.style.setProperty('--time-transition', '0.04s');
-    // var transition = "";
-    // if(toggle){ 
-    //     // document.body.style.transition = '';
-    //     transition = "all 0.4s";
-    // }
-    // else{
-    //     transition = "none";
-    //     document.body.style.setProperty('--transition-btn', "none");
-    // }
-
-    // document.body.style.setProperty('--transition', transition);
     changeMenu('dark');
     changeBody('dark');
-    // document.body.style.setProperty('--transition-btn', "all 0.4s");
 }
