@@ -4,7 +4,7 @@
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  */
 
-(() => {
+export function colorModes() {
     'use strict'
   
     const getStoredTheme = () => localStorage.getItem('theme')
@@ -63,8 +63,10 @@
         setTheme(getPreferredTheme())
       }
     })
-  
-    window.addEventListener('DOMContentLoaded', () => {
+    
+    // window.addEventListener('DOMContentLoaded', () => {
+    // document.body.addEventListener('click', () => {
+      console.log("ta pegando");
       showActiveTheme(getPreferredTheme())
   
       document.querySelectorAll('[data-bs-theme-value]')
@@ -76,5 +78,5 @@
             showActiveTheme(theme, true)
           })
         })
-    })
-  })()
+    // })
+  }

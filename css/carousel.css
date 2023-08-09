@@ -5,7 +5,9 @@
 } */
 /*slider*/
 :root {
-    --color: #9ae14b;
+    --maincolor: #9ae14b;
+    --seccolor: #6b7ce6;
+    --thirdcolor: #a6b1f4;
 }
 
 .swiper{
@@ -59,7 +61,7 @@
     top: .2em;
 }
 .card-name{
-    color: var(--color);
+    color: var(--maincolor);
 }
 .card-text{
     text-align: center;
@@ -67,7 +69,7 @@
     margin: 1em 0;
 }
 .card-btn{
-    background-color: var(--color);
+    background-color: var(--seccolor);
     color: #fff;
     font-size: 1rem;
     text-transform: uppercase;

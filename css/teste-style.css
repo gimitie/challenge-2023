@@ -1,0 +1,174 @@
+/*************** General ***************/
+:root {
+    /* body */
+    --bg-color-body: black;
+    --border-color-body: black;
+    --bg-background-color-body: white;
+    /*  */
+    --bg-color: black;
+    --bg-border-color: black;
+    --bg-background-color: #f8f9fa;
+
+    --transition: all 0.4s;
+    --transition-btn: all 0.4s;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.bg-color-dark-body{
+    color: white;
+    border-color: white;
+    background-color: #292929;
+}
+
+.bg-color{
+    color: var(--bg-color);
+    border-color: var(--bg-border-color);
+    background-color: var(--bg-background-color);
+    transition: var(--transition);
+    /* transition: var(--transition) 0.4; */
+}
+
+.bg-color-body{
+    color: var(--bg-color-body);
+    border-color: var(--border-color-body);
+    background-color: var(--bg-background-color-body);
+    /* transition: var(--transition) 0.4; */
+    /* background-color: #292929; */
+}
+/*************** Line ***************/
+.line{
+    height: 6px;
+    width: 30%;
+    background: #97D700;
+    display: inline-block;
+}
+.line-hunger{
+    height: 6px;
+    width: 25%;
+    background: #97D700;
+    display: inline-block;
+}
+
+/*************** Main ****************/
+/* button */
+.mbtn-dark{
+    color: white;
+}
+.mbtn-light{
+    color: black;
+}
+
+.mbtn {
+    color: var(--bg-color);
+}
+
+.mbtn1{
+    height: 50px;
+    width: 25%;
+    outline: none;
+    border: 1.5px solid black;
+    color: black;
+    background: transparent;
+    border-radius: 50px;
+    transition: all 0.4;
+    text-decoration: none;
+}
+.mbtn2{
+    height: 50px;
+    width: 25%;
+    outline: none;
+    border: 1.5px solid;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+.mbtn3{
+    height: 50px;
+    width: 25%;
+    outline: none;
+    border: none;
+    color: white;
+    background: #97D700;
+    border-radius: 50px;
+    transition: all 0.4;
+    text-decoration: none;
+}
+/* button - style */
+.mbtn1:hover, .mbtn1:active, .mbtn1:visited, .mbtn1:link{
+    background-color: #4ac3d6;
+    color: #fff;
+    border: none;
+}
+.mbtn2:hover, .mbtn2:active, .mbtn2:visited, .mbtn2:link{
+    background-color: #9cd65d;
+    border: none;
+    color: white;
+}
+.mbtn3:hover, .mbtn3:active, .mbtn3:visited, .mbtn3:link{
+    height: 50px;
+    width: 25%;
+    outline: none;
+    border: 1.5px solid;
+    background-color: transparent;
+    color: #97D700;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+/*************** What is Sustainability ****************/
+.img-sust-meaning{  
+    margin-left: 19px;
+    margin-top: 20px;
+}
+.sust-meaning h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.sust-meaning p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+}
+.sust-meaning p:nth-child(2){
+    font-size: 18px;
+    color: #979A9A;
+}
+/*************** Tips to be Sustainable ****************/
+.img-sust-tips{
+    margin-left: -10px;
+    margin-top: 60px;
+}
+.sust-tips h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.sust-tips p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+}
+.sust-tips p:nth-child(2){
+    font-size: 18px;
+    color: #979A9A;
+}
+/*************** Benefits of being Sustainable ****************/
+.img-sust-benefits{  
+    margin-left: 10px;
+    margin-top: 80px;
+}
+.sust-benefits h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.sust-benefits p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+}
+.sust-benefits p:nth-child(2){
+    font-size: 18px;
+    color: #979A9A;
+}

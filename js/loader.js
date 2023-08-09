@@ -1,3 +1,5 @@
+import {colorModes} from "./color-modes.js";
+
 window.addEventListener("load", function() {
     init();
 });
@@ -5,8 +7,8 @@ window.addEventListener("load", function() {
 function init() {
     loadHeader();
     loadFooter();
+    setTimeout(colorModes, 50);
 }
-
 
 function loadHeader() {
     var output=document.getElementById("teste-header");
@@ -15,7 +17,7 @@ function loadHeader() {
 
     input.addEventListener("load",function(){
         output.innerHTML=input.responseText;
-        });
+    });
     
     input.send();
 }
@@ -31,4 +33,3 @@ function loadFooter() {
 
     input.send();
 }
-
