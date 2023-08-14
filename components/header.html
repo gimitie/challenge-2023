@@ -1,63 +1,189 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="auto">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Hunger</title>
-  <!-- browser icon -->
-  <link rel="icon" href="../img/logo-schneider.png" type="image/png">
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/style-header.css">
-  <link rel="stylesheet" href="../css/style-footer.css">
-  <!-- bootstrap 5 link -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
-  <!-- bootstrap icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap" rel="stylesheet">
-  <!-- script jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <!-- javascript header & footer function -->
-  <!-- <script rel="javascript" src="./js/dark-theme.js"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- bootstrap 5 link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+
+    <!-- bootstrap -->
+    <script src="../js/color-modes.js"></script>
+    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <meta name="theme-color" content="#97d700">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg mb-0 bg-color"> 
-  <div class="container bg-color">
-    <a class="navbar-brand mt-3 bg-color" href="index.html"><img src="../img/logo-schneider.png" class="img-fluid w-100"></a>
-    <button class="navbar-toggler bg-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon bg-color"><i class="bi bi-list bg-color"></i></span>
-    </button>
-    <div class="collapse navbar-collapse mt-0 bg-color" id="navbarSupportedContent">
-      <ul class="navbar-nav mt-0 m-auto mb-4 mb-lg-0 bg-color">
-        <li class="nav-item mt-2 bg-color">
-          <a class="nav-link active bg-color" aria-current="page" href="../a-crise-da-fome.html">A CRISE DA FOME</a>
-        </li>
-        <li class="nav-item mt-2 bg-color">
-          <a class="nav-link active bg-color" aria-current="page" href="../impacto-global.html">IMPACTO GLOBAL</a>
-        </li>
-        <li class="nav-item mt-2 bg-color">
-          <a class="nav-link active bg-color" aria-current="page" href="../fome-zero.html">FOME ZERO</a>
-        </li>
-        <li class="nav-item mt-2 bg-color">
-          <a class="nav-link active bg-color" aria-current="page" href="../tome-uma-atitude.html">TOME UMA ATITUDE</a>
-        </li>
-      </ul>
-      <form class="d-flex bg-color">
-        <!-- <input class="px-2 search bg-color" type="search" placeholder="Pesquisar" aria-label="Search"> -->
-        <button class="btn1 px-3 bg-color" type="submit"><i class="bi bi-search bg-color"></i></button>
-      </form>
-      <div>
-        <i class="btn-theme mt-3 bi bi-moon bg-color"></i>
-        <i class="btn-theme mt-3 bi bi-sun bg-color"></i>
-      </div>
-      
-  </div>
-</div>
-</nav>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+        <symbol id="three-dots" viewBox="0 0 16 16">
+            <path
+                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+        </symbol>
+    </svg>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+            <a class="navbar-brand p-0 me-0 me-lg-4" href="../index.html">
+                <img src="../img/logo-schneider.png" width="100" height="32" class="d-block my-1">
+            </a>
+
+            <div class="d-flex">
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+                    <svg class="bi" aria-hidden="true">
+                        <use xlink:href="#three-dots"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="offcanvas offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+                aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+                <div class="offcanvas-header px-4 pb-0">
+                    <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Schneider Electric</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close" data-bs-target="#bdNavbar"></button>
+                </div>
+
+                <div class="offcanvas-body p-4 pt-0 p-lg-0">
+                    <hr class="d-lg-none text-white-50">
+                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="../sustentabilidade.html">Sustentabilidade</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#">Éticas</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#">Exemplos</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank">Vídeo Pitch</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="../sobre-o-projeto.html">Sobre o projeto</a>
+                        </li>
+                    </ul>
+
+                    <hr class="d-lg-none text-white-50">
+
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#" target="_blank"
+                                rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" 
+                                    viewBox="0 0 16 16">
+                                    <title>Instagram</title>
+                                    <path fill="currentColor" 
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                </svg>
+                                <small class="d-lg-none ms-2">Instagram</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="#"
+                                target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                                    viewBox="0 0 512 416.32" role="img">
+                                    <title>Twitter</title>
+                                    <path fill="currentColor"
+                                        d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92" />
+                                </svg>
+                                <small class="d-lg-none ms-2">Twitter</small>
+                            </a>
+                        </li>
+                        <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                            <hr class="d-lg-none my-2 text-white-50">
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <button
+                                class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                                id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                                data-bs-display="static" aria-label="Toggle theme (auto)">
+                                <svg class="bi my-1 theme-icon-active">
+                                    <use href="#circle-half"></use>
+                                </svg>
+                                <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="light" aria-pressed="false">
+                                        <svg class="bi me-2 opacity-50 theme-icon">
+                                            <use href="#sun-fill"></use>
+                                        </svg>
+                                        Light
+                                        <svg class="bi ms-auto d-none">
+                                            <use href="#check2"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center"
+                                        data-bs-theme-value="dark" aria-pressed="false">
+                                        <svg class="bi me-2 opacity-50 theme-icon">
+                                            <use href="#moon-stars-fill"></use>
+                                        </svg>
+                                        Dark
+                                        <svg class="bi ms-auto d-none">
+                                            <use href="#check2"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-flex align-items-center active"
+                                        data-bs-theme-value="auto" aria-pressed="true">
+                                        <svg class="bi me-2 opacity-50 theme-icon">
+                                            <use href="#circle-half"></use>
+                                        </svg>
+                                        Auto
+                                        <svg class="bi ms-auto d-none">
+                                            <use href="#check2"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>

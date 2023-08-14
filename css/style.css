@@ -213,12 +213,14 @@ p{
 :root,
 [data-bs-theme="light"] {
     --bd-orange: #d69a33;
-    --bd-green: #97d700;
+    --bd-green: #9ae14b;
     --bd-accent: #ffe484;
+    --bd-black: #212529;
     --bd-accent-rgb: 255, 228, 132;
     --bd-orange-rgb: 214, 154, 51;
     --bd-green-rgb: 154, 225, 75;
     --bd-teal-rgb: 32, 201, 151;
+    --bd-black-bg: var(--bd-black);
     --bd-green-bg: var(--bd-green);
     --bd-green-bg: var(--bd-green);
     --bd-toc-color: var(--bd-green);
@@ -229,7 +231,7 @@ p{
 }
 
 [data-bs-theme="dark"] {
-    --bd-green: #97d700;
+    --bd-green: #9ae14b;
     --bd-toc-color: var(--bs-emphasis-color);
     --bd-sidebar-link-bg: rgba(84, 33, 187, .5);
     --bd-callout-link: 110, 168, 254;
@@ -317,13 +319,13 @@ p{
     vertical-align: -.125rem
 }
 
-.bd-navbar .offcanvas-lg {
+.bd-navbar .offcanvas {
     background-color: var(--bd-green-bg);
     border-left: 0
 }
 
 @media (max-width: 991.98px) {
-    .bd-navbar .offcanvas-lg {
+    .bd-navbar .offcanvas {
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175)
     }
 }

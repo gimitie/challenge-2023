@@ -11,9 +11,9 @@ function init() {
 }
 
 function loadHeader() {
-    var output=document.getElementById("teste-header");
+    var output=document.getElementById("header");
     var input=new XMLHttpRequest();
-    input.open("GET","components/teste-header.html");
+    input.open("GET","components/header.html");
 
     input.addEventListener("load",function(){
         output.innerHTML=input.responseText;
@@ -23,9 +23,9 @@ function loadHeader() {
 }
 
 function loadFooter() {
-    var output2=document.getElementById("teste-footer");
+    var output2=document.getElementById("footer");
     var input=new XMLHttpRequest();
-    input.open("GET","components/teste-footer.html")
+    input.open("GET","components/footer.html")
 
     input.addEventListener("load",function(){
         output2.innerHTML=input.responseText;

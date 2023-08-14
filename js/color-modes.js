@@ -1,9 +1,3 @@
-/*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- */
-
 export function colorModes() {
     'use strict'
   
@@ -66,7 +60,6 @@ export function colorModes() {
     
     // window.addEventListener('DOMContentLoaded', () => {
     // document.body.addEventListener('click', () => {
-      console.log("ta pegando");
       showActiveTheme(getPreferredTheme())
   
       document.querySelectorAll('[data-bs-theme-value]')
