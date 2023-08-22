@@ -61,28 +61,31 @@ p{
 }
 
 .mbtn1{
+    color:gray;
     height: 50px;
     width: 25%;
     outline: none;
-    border: 1.5px solid;
+    border: 1.5px solid gray;
     background-color: transparent;
     border-radius: 50px;
     transition: all 0.4s;
 }
 .mbtn2{
+    color:gray;
     height: 50px;
     width: 25%;
     outline: none;
-    border: 1.5px solid;
+    border: 1.5px solid gray;
     background-color: transparent;
     border-radius: 50px;
     transition: all 0.4s;
 }
 .mbtn3{
+    color:gray;
     height: 50px;
     width: 25%;
     outline: none;
-    border: 1.5px solid;
+    border: 1.5px solid gray;
     background-color: transparent;
     border-radius: 50px;
     transition: all 0.4s;
@@ -106,7 +109,11 @@ p{
 /*************** What is Sustainability ****************/
 .img-sust-meaning{  
     margin-left: 19px;
-    margin-top: 20px;
+    margin-top: 0px;
+}
+.img-sustainable{  
+    margin-left: -20px;
+    margin-top: 0px;
 }
 .sust-meaning h1{
     font-size: 3rem;
@@ -157,6 +164,10 @@ p{
     font-size: 18px;
     color: #979A9A;
 }
+.img-recycle{  
+    margin-left: -40px;
+    margin-top: 30px;
+}
 
 /*************** Sobre o Projeto ****************/
 .member h1{
@@ -177,9 +188,13 @@ p{
     border-radius: 50%;
     object-fit: cover;
 }
+.img-green-connect{  
+    margin-left: 60px;
+    margin-top: 0px;
+}
 .img-member{  
-    margin-left: 10px;
-    margin-top: 140px;
+    margin-left: -40px;
+    margin-top: 110px;
 }
 .member-title{
     font-size: 1.5rem;
@@ -197,6 +212,25 @@ p{
 }
 .space{
     padding: 218.9px;
+}
+
+/*************** Exemples ****************/
+
+.img-ranking{  
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.img-ecological{  
+    margin-left: -20px;
+    margin-top: 30px;
+}
+.img-displacement{  
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.img-sust-benefits2{  
+    margin-left: 100px;
+    margin-top: 30px;
 }
 
 /*************** Bootstrap Custom ****************/
